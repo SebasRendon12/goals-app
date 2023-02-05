@@ -1,0 +1,14 @@
+import { Injectable } from '@angular/core';
+
+@Injectable({
+  providedIn: 'root',
+})
+export class InitializerService {
+  constructor() {}
+
+  init() {
+    return new Promise<void>((resolve) => {
+      resolve();
+    });
+  }
+}
